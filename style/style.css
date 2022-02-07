@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+/*GLOBAL SETTINGS*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    overflow: auto;
+    overflow-x: hidden;
+    
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    line-height: 50px;
+    font-size: 36px;
+}
+p{
+    font-weight: 500;
+}
+/*NAV HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menulist{
+    text-decoration: none;
+    margin-left: 70px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+.menulist:hover{
+    color: hsl(224, 93%, 58%);
+    border-bottom: hsl(224, 93%, 58%) 1px solid;
+}
+/*Section 1*/
+#mainpadding{
+    padding: 60px 80px;
+    max-width: 1440px;
+    min-width: 1440px;
+    margin: auto;
+}
+#first{
+    margin: 100PX 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#card1{
+    width: 530px; 
+} 
+#card1 p{
+    margin:  30px 0 20px;
+}
+#firstimg{  
+    width: 640px;
+}
+#form1 [type=email]{
+    width: 290px;
+    padding: 8px;
+}
+#form1 [type=submit]{
+    border: none;
+    width: 170px;
+    height: 35px;
+    margin-left: 10px;
+    background-color: hsl(224, 93%, 58%);
+    border-radius: 2px;
+    color: white;
+    box-shadow: 1px 1px 4px gray;
+    cursor: pointer;
+}
+#form1 [type=submit]:hover{
+    background-color: hsl(224, 93%, 65%);
+}
+@media(max-width: 375px){
+    header{
+        padding: 20px 30px 0;
+    }
+    #logo{
+        width: 100px;
+    }
+    .menulist{
+        margin: 0 3px;
+        font-size: 14px;
+    }
+    #mainpadding{
+        max-width: 375px;
+        min-width: 375px;
+        padding: 0;
+        margin: auto;
+    }
+    #first{
+        flex-direction: column-reverse;
+    }
+    #card1{
+        width: 100%;
+        text-align: center;
+    }
+    #card1 h1{
+        font-size: 30px;
+        padding: 0 20px;
+        line-height: 40px;
+    }
+    #card1 p{
+        padding: 0 20px;
+        margin-bottom: 35px;
+    }
+    #firstimg{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #form1 [type=submit]{
+        width: 290px;
+        margin: 15px 0;
+    }
+}
+/*Bg Curve*/
+#bgcurve{
+    width: 100vw;
+    margin-top: 120px;
+    position: relative;
+    bottom: -5px;
+}
+#bgcolorsecond{
+    background-color: #f8f8fe;
+}
+/*Section 2*/
+#second{
+    padding: 60px 80px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    min-width: 1440px;
+    margin: auto;
+}
+#card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#card2 h1{
+    font-size: 42px;
+}
+#card2ps{
+    margin: 35px 0 20px 0;
+    text-align: justify;
+    width: 525px;
+}
+#card2 a{
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+    border-bottom: hsl(170, 45%, 43%) solid 1px;
+    width: 167px;
+    padding-bottom: 5px;
+}
+#card2 a:hover{
+    color: hsl(170, 45%, 65%);
+    border-bottom: hsl(170, 45%, 65%) solid 1px;
+}
+#card2 a img{
+    position: relative;
+    top: 3px;
+}
+/*Mini card*/
+#minicard{
+    width: 360px;
+    height: 215px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px rgb(218, 218, 218);
+    padding: 30px;
+    margin-top: 45px;
+    font-size: 13px;
+}
+#minicard > p{
+    margin: 5px 0 15px;
+}
+#person{
+    display: flex;
+    align-items: center;
+}
+#person img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+#person div{
+    font-size: 13px;
+    margin-left: 10px;
+}
+/*End Minicard*/
+#secondimg{
+    width: 540px;
+    align-self: center;
+}
+@media (max-width: 375px){
+    #second{
+        max-width: 375px;
+        min-width: 375px;
+        padding: 20px 20px 30px;
+        flex-direction: column-reverse;
+    }
+    #second > img{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    #card2 h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    #card2ps{
+        text-align: center;
+        width: 100%;
+    }
+    #card2 a{
+        margin: auto;
+    }
+    #minicard{
+        width: 300px;
+        height: 180px;
+        margin: 40px auto;
+        padding: 15px 20px;
+    }
+}
+
+/*Section 3*/
+#bgcolorthird{
+    background-color: #575989;
+}
+
+#third{
+    padding: 80px 80px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    min-width: 1440px;
+    margin: auto;
+}
+#card3{
+    width: 510px;
+}
+#card3 h1{
+    margin-bottom: 20px;
+    font-size: 33px;
+}
+#form2{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-right: 50px;
+}
+#form2 [type=email]{
+    width: 460px;
+    padding: 13px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0 10px;
+}
+#form2 [type=submit]{
+    width: 200px;
+    padding: 13px;
+    border-radius: 3px;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    box-shadow: 0 1px 5px rgb(59, 59, 59);
+    cursor: pointer;
+}
+#form2 [type=submit]:hover{
+    background-color: hsl(224, 93%, 65%);
+}
+@media (max-width: 375px){
+    #third{
+        max-width: 375px;
+        min-width: 375px;
+        flex-direction: column;
+        padding: 50px 35px 60px;
+        text-align: center;
+    }
+    #card3{
+        width: 300px;
+    }
+    #card3 h1{
+        font-size: 28px;
+    }
+    #form2{
+        margin: 20px 0 0 0;
+        padding: 0;
+        align-items: center;
+    }
+    #form2 [type=email]{
+        width: 250px;
+    }
+    #form2 [type=submit]{
+        width: 250px;
+    }
+}
+/*Footer*/
+#bgcolorfooter{
+    background-color: #07043b;
+}
+footer{
+    max-width: 1440px;
+    min-width: 1440px;
+    margin: auto;
+    padding: 80px 80px 50px;
+    color: white;
+}
+#info{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+}
+#contact div{
+    display: flex;
+    margin: 0 0 20px;
+}
+#contact div img{
+    margin-right: 15px;
+}
+.links li{
+    list-style: none;
+    margin-bottom: 14px;
+}
+.linkbtn{
+    text-decoration: none;
+    color: white;
+}
+.linkbtn:hover{
+    color: hsl(224, 93%, 58%);
+}
+#redes a{
+    margin-left: 10px;
+    font-size: 25px;
+    position: relative;
+    transition: position 4s;
+}
+#redes a:hover{
+    bottom: 3px;
+}
+@media (max-width: 375px){
+    footer{
+        padding: 60px 35px;
+        max-width: 375px;
+        min-width: 375px;
+    }
+    #contact div{
+        margin-top: 20px;
+    }
+    #info{
+        grid-template-columns: 1fr;
+        grid-template-rows: 140px 190px 140px 10px;
+    }
+    #redes{
+       justify-self: center;
+    }
+}
